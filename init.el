@@ -26,7 +26,7 @@
        ;;fill-column       ; a `fill-column' indicator
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;hydra
-       ;;indent-guides     ; highlighted indent columns
+       indent-guides     ; highlighted indent columns
        modeline          ; snazzy, Atom-inspired modeline, plus API
        nav-flash         ; blink the current line after jumping
        ;;neotree           ; a project drawer, like NERDTree for vim
@@ -34,9 +34,9 @@
        (popup            ; tame sudden yet inevitable temporary windows
         +all             ; catch all popups that start with an asterix
         +defaults)       ; default popup rules
-       ;;pretty-code       ; replace bits of code with pretty symbols
+       ;; pretty-code       ; replace bits of code with pretty symbols
        ;;tabs              ; an tab bar for Emacs
-       ;;treemacs          ; a project drawer, like neotree but cooler
+       treemacs          ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
        vc-gutter         ; vcs diff in the fringe
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
@@ -74,7 +74,7 @@
        ;;debugger          ; FIXME stepping through code, to help you add bugs
        ;;direnv
        docker
-       ;;editorconfig      ; let someone else argue about tabs vs spaces
+       editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
        flycheck          ; tasing you for every semicolon you forget
@@ -86,7 +86,7 @@
        ;;macos             ; MacOS-specific commands
        magit             ; a git porcelain for Emacs
        make              ; run make tasks from Emacs
-       pass              ; password manager for nerds
+       ;;pass              ; password manager for nerds
        ;;pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
@@ -187,7 +187,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("ca0a98b766b64d98c24084e2fd2b74b795286a0ff322f53459fe60684c2fcffb" "d8e3a2b8c72c3cb52d070a5e1969849197488b92d7211cc86c97e033239fdde2" default))))
+    ("ca0a98b766b64d98c24084e2fd2b74b795286a0ff322f53459fe60684c2fcffb" "d8e3a2b8c72c3cb52d070a5e1969849197488b92d7211cc86c97e033239fdde2" default)))
+ '(js-indent-level 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

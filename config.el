@@ -8,11 +8,18 @@
 (setq doom-theme 'base16-helios
       display-line-numbers-type 'relative)
 
-(if (equal (display-pixel-width) 2560)
-    (setq doom-font (font-spec :family "Iosevka" :size 20)
-          doom-big-font (font-spec :family "Iosevka" :size 36))
-  (setq doom-font (font-spec :family "Iosevka" :size 16)
-        doom-big-font (font-spec :family "Iosevka" :size 30)))
+;; (setq doom-font (font-spec :family "Iosevka" :size 16)
+;;       doom-big-font (font-spec :family "Iosevka" :size 30)
+;;       doom-variable-pitch-font (font-spec :family "Noto Sans" :size 14))
+
+;; <=> >> >>= >>> <<< <- -> ->> <-> &&
+(setq doom-font (font-spec :family "Source Code Pro" :size 16)
+      doom-big-font (font-spec :family "Source Code Pro" :size 30)
+      doom-variable-pitch-font (font-spec :family "Noto Sans" :size 14))
+
+(setq x-select-enable-clipboard-manager nil)
+
+(setq projectile-project-search-path '("~/dev/"))
 
 ;; Lets drag stuff aroung using hjk;
 (map! :ne "C-S-k" #'drag-stuff-up)
@@ -37,4 +44,4 @@
 
 (map! [remap org-capture] nil)
 
-(setq fancy-splash-image "~/.doom.d/notarock.png")
+;; (setq fancy-splash-image "~/.doom.d/sunglass.png")
