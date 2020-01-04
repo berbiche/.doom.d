@@ -17,8 +17,13 @@
       doom-big-font (font-spec :family "Source Code Pro" :size 30)
       doom-variable-pitch-font (font-spec :family "Noto Sans" :size 14))
 
+;; Always softwrap
+(global-visual-line-mode t)
+
+;; Disable clipboard manager hanging for a few seconds on Wayland
 (setq x-select-enable-clipboard-manager nil)
 
+;; Projectile default directory for my projects
 (setq projectile-project-search-path '("~/dev/"))
 
 ;; Lets drag stuff aroung using hjk;
@@ -35,6 +40,17 @@
 
 (map! :ne "SPC s h" #'insert-random-hash)
 
+;; Display a frame à la vscode at the top for M-x other things
+(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-top-center))
+      ivy-posframe-height-alist '((t . 10))
+      ivy-posframe-parameters '((internal-border-width . 5)))
+;;(setq ivy-posframe-border '((t (:background "#61BFFF"))))
+(setq ivy-posframe-width 70)
+(ivy-posframe-mode +1)
+
+;; Don't push a new buffer when navigating with RETURN in dired
+(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+
 ;; On vsplit using V, focus the new frame
 (map! :ne "SPC w V" (lambda () (interactive)(evil-window-vsplit) (other-window 1)))
 
@@ -45,3 +61,5 @@
 (map! [remap org-capture] nil)
 
 ;; (setq fancy-splash-image "~/.doom.d/sunglass.png")
+
+(add-hook 'yaml-mode-hook 'electric-indent-local-mode)
