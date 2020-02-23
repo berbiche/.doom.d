@@ -45,7 +45,7 @@
       ivy-posframe-height-alist '((t . 10))
       ivy-posframe-parameters '((internal-border-width . 5)))
 ;;(setq ivy-posframe-border '((t (:background "#61BFFF"))))
-(setq ivy-posframe-width 70)
+(setq ivy-posframe-width 100)
 (ivy-posframe-mode +1)
 
 ;; Don't push a new buffer when navigating with RETURN in dired

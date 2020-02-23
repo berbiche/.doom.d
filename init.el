@@ -69,6 +69,12 @@
        term              ; terminals in Emacs
        ;;vterm             ; another terminals in Emacs
 
+       :checkers
+       ;;spell             ; tasing you for misspelling mispelling
+       ;;grammar           ; tasing grammar mistake every you make
+       flycheck
+       ;;flyspell          ; tasing you for misspelling mispelling
+
        :tools
        ansible
        ;;debugger          ; FIXME stepping through code, to help you add bugs
@@ -77,8 +83,6 @@
        editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
-       flycheck          ; tasing you for every semicolon you forget
-       ;;flyspell          ; tasing you for misspelling mispelling
        ;;gist              ; interacting with github gists
        (lookup           ; helps you navigate your code and documentation
         +docsets)        ; ...or in Dash docsets locally
@@ -93,7 +97,6 @@
        terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
-       ;;wakatime
 
        :lang
        ;;agda              ; types of types of types of types...
@@ -103,7 +106,7 @@
        common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
-       ;;csharp            ; unity, .NET, and mono shenanigans
+       csharp            ; unity, .NET, and mono shenanigans
        data              ; config/data formats
        ;;erlang            ; an elegant language for a more civilized age
        elixir            ; erlang done right
@@ -122,6 +125,7 @@
        ;;kotlin            ; a better, slicker Java(Script)
        latex             ; writing papers in Emacs has never been so fun
        ;;lean
+       ;;factor
        ;;ledger            ; an accounting system in Emacs
        ;;lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
@@ -154,9 +158,9 @@
        web               ; the tubes
 
        :email
-       ;;(mu4e +gmail)       ; WIP
-       ;;notmuch             ; WIP
-       ;;(wanderlust +gmail) ; WIP
+       ;;(mu4e +gmail)
+       ;;notmuch
+       ;;(wanderlust +gmail)
 
        ;; Applications are complex and opinionated modules that transform Emacs
        ;; toward a specific purpose. They may have additional dependencies and
