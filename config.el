@@ -5,7 +5,7 @@
 (require 'base16-theme)
 
 ;; Fonts too
-(setq doom-theme 'base16-helios
+(setq doom-theme 'doom-gruvbox
       display-line-numbers-type 'relative)
 
 ;; (setq doom-font (font-spec :family "Iosevka" :size 16)
