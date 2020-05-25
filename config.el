@@ -23,6 +23,10 @@
 ;; Disable clipboard manager hanging for a few seconds on Wayland
 (setq x-select-enable-clipboard-manager nil)
 
+;; Don't yank/etc. buffer to the x11-clipboard
+(setq select-enable-clipboard nil)
+(setq select-enable-primary nil)
+
 ;; Projectile default directory for my projects
 (setq projectile-project-search-path '("~/dev/"))
 
