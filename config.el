@@ -34,6 +34,9 @@
 (setq racer-rust-src-path nil)
 (setq racer-cmd "racer")
 
+;; Highlight trailing whitespacse by default
+(setq show-trailing-whitespace 't)
+
 ;; Lets drag stuff aroung using hjk;
 (map! :ne "C-S-k" #'drag-stuff-up)
 (map! :ne "C-S-j" #'drag-stuff-down)
