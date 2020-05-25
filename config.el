@@ -15,7 +15,7 @@
 ;; <=> >> >>= >>> <<< <- -> ->> <-> &&
 (setq doom-font (font-spec :family "Source Code Pro" :size 16)
       doom-big-font (font-spec :family "Source Code Pro" :size 30)
-      doom-variable-pitch-font (font-spec :family "Noto Sans" :size 14))
+      doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 14))
 
 ;; Always softwrap
 (global-visual-line-mode t)
@@ -25,6 +25,10 @@
 
 ;; Projectile default directory for my projects
 (setq projectile-project-search-path '("~/dev/"))
+
+;; Rust development using shell.nix
+(setq racer-rust-src-path nil)
+(setq racer-cmd "racer")
 
 ;; Lets drag stuff aroung using hjk;
 (map! :ne "C-S-k" #'drag-stuff-up)
