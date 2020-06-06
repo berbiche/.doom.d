@@ -35,7 +35,11 @@
 (setq racer-cmd "racer")
 
 ;; Highlight trailing whitespacse by default
-(setq show-trailing-whitespace 't)
+(setq-default show-trailing-whitespace 't)
+(defun toggle-show-trailing-whitespace ()
+  "Toggle `show-trailing-whitespace'"
+  (interactive)
+  (setq show-trailing-whitespace (not show-trailing-whitespace)))
 
 ;; Lets drag stuff aroung using hjk;
 (map! :ne "C-S-k" #'drag-stuff-up)
