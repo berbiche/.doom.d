@@ -7,6 +7,5 @@
 ;; (package! builtin-package :disable t)
 ;;
 (package! base16-theme)
-(package! org-fancy-priorities)
 (package! k8s-mode)
 (package! ivy-posframe)
